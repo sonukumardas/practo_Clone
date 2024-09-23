@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+<script src="validation.js"></script>
+
+</head>
+<body>
+
+
+	<header>
+		<h1>welcome to practo protol</h1>
+
+		<p>
+			<a href="index.html"> home </a> | <a href="about.html"> about </a> |
+			<a href="contact.html"> contactus </a> | <a href="reg.html">
+				patientsignup </a> | <a href="login.html"> patientsignup </a> | <a
+				href="#"> doctorSignup </a>| <a href="doctorlogin.html">
+				doctorlogin </a>
+		</p>
+	</header>
+	<hr>
+	<form action="doctorSignup" method="post" name="form1"
+		onsubmit="return validateRegFormData()">
+
+		<table align="center" cellpadding="5px" cellspacing="5px">
+
+			<caption>
+				<h2>Doctor Registration Form</h2>
+			</caption>
+
+			<tr>
+				<td><label for="id1">Full Name</label></td>
+				<td><input type="text" name="n1" id="id1"></td>
+			</tr>
+
+			<tr>
+				<td><label for="id2">Phone Number</label></td>
+				<td><input type="number" name="n2" id="id2"></td>
+			</tr>
+
+			<tr>
+				<td><label for="id3">Password</label></td>
+				<td><input type="Password" name="n3" id="id3"></td>
+			</tr>
+
+			<tr>
+				<td><label for="id4">Confirm Password</label></td>
+				<td><input type="Password" name="n4" id="id4"></td>
+			</tr>
+
+			<tr>
+				<td><label for="id5">Gender</label></td>
+				<td><Select name="n5" id="id5">
+						<option value="Select Gender">Select Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+				</Select></td>
+			</tr>
+
+			<tr>
+				<td><label for="id6">Age</label></td>
+				<td><input type="number" name="n6" id="id6"></td>
+			</tr>
+
+
+
+			<tr>
+				<td><label for="id7">Specialist</label></td>
+				<td><select name="n7" id="id7">
+						<option value="Select Course">Select Specialist</option>
+						<option value="Dentist">Dentist</option>
+						<option value="ENT">ENT</option>
+						<option value="Cardiogists">Cardiogists</option>
+						<option value="Psychiatrist">Psychiatrist</option>
+						<option value="Pediatricians">Pediatricians</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Register"></td>
+				<td><input type="reset" value="Clear"></td>
+			</tr>
+
+		</table>
+
+	</form>
+
+	<br>
+	<br>
+	<br>
+
+
+	<hr>
+	<footer>
+		<h3>copyright@sonu</h3>
+	</footer>
+
+</body>
+</html>
